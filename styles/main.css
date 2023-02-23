@@ -13,7 +13,6 @@ html {
     background-image: url("../images/bgtile.jpg");
 }
 
-
 main :link{
     color: aqua;
 }
@@ -90,6 +89,10 @@ header img {
 
     float: left;
     margin: 0 .75em;
+    max-width: 140px;
+    width: 100%;
+    min-width: 70px;
+
     
 }
 
@@ -312,4 +315,40 @@ footer p {
 
 .shadow {
     text-shadow: 3px 3px 8px black;
+}
+#mobilemenu{
+    display: none;
+}
+/*=========================================
+
+                MEDIA QUERY
+
+=========================================*/
+
+@media only screen and (max-width: 900px) {
+    body {
+        box-shadow: none;
+        border: none;
+        font-size: 90%;
+        
+    }
+}
+@media only screen and (max-width:767px){
+    #nav_menu{
+        display:none;
+    }
+    #mobilemenu{
+        display:block;
+    }
+    .slicknav_menu{
+        background-color: steelblue;
+    }
+    section, aside, #rightcol{
+       float: none;
+       width: 100%;
+       margin: 10px auto;
+    }
+}
+@media only screen and (max-width:476){
+    
 }
